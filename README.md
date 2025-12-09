@@ -32,6 +32,23 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **PROGRAM**
 
+```
+module ex11(out,clk,rst);
+input clk,rst;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(rst)
+     out<=0;
+   else
+     out <= out+1;
+end
+end endmodule
+```
+
+RTL LOGIC UP COUNTER
+
+
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
 Developed by: RegisterNumber:
@@ -39,8 +56,19 @@ Developed by: RegisterNumber:
 
 **RTL LOGIC UP COUNTER**
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec91ced9-8ef4-4ae1-9546-8df0abc49d08" />
+
+
 **TIMING DIAGRAM FOR IP COUNTER**
+
+<img width="757" height="502" alt="image" src="https://github.com/user-attachments/assets/d7b86765-5806-4f37-bf45-ef44f7620db1" />
+
 
 **TRUTH TABLE**
 
+<img width="609" height="411" alt="image" src="https://github.com/user-attachments/assets/a4edf10b-1221-4894-af6b-630bf6c8843f" />
+
+
 **RESULTS**
+
+Thus the truth table of logic gates in Quartus II using Verilog programming is studied and verified successfully
